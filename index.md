@@ -1,4 +1,4 @@
-**Senior Data Analyst**
+# Senior Data Analyst
 
 ---
 layout: default
