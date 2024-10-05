@@ -1,4 +1,7 @@
 # Senior Data Analyst
+[LinkedIn](https://www.linkedin.com/in/adityavighne/) 
+
+[Power BI Community](https://community.powerbi.com/t5/user/viewprofilepage/user-id/37290)
 
 ---
 layout: default
