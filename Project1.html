@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1: Marketing Campaign ROI Optimization - Aditya Vighne</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800"> <!-- Removed pt-20 as header is no longer fixed -->
+
+    <!-- Header Section - Reused from main page (no longer fixed) -->
+    <header class="bg-white shadow-md w-full z-50"> <!-- Removed 'fixed' class -->
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html#home" class="text-2xl font-bold text-blue-600 rounded-md p-2 hover:bg-blue-50 transition duration-300">Aditya Vighne</a>
+            <ul class="flex space-x-6">
+                <li><a href="index.html#home" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Home</a></li>
+                <li><a href="index.html#about" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">About</a></li>
+                <li><a href="index.html#projects" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Projects</a></li>
+                <li><a href="index.html#contact" class="text-gray-700 hover:text-blue-600 font-medium transition duration-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Project Detail Section -->
+    <main class="py-12 px-4 md:px-8 lg:px-16 container mx-auto">
+        <div class="max-w-5xl mx-auto bg-white p-8 rounded-lg shadow-xl">
+            <h1 class="text-4xl font-bold text-blue-700 mb-6 text-center">Marketing Campaign ROI Optimization</h1>
+
+            <img src="https://placehold.co/1000x500/A7D9F7/000000?text=Project+Dashboard+Mockup" alt="Project Dashboard Mockup" class="w-full h-auto rounded-lg mb-8 shadow-md">
+
+            <div id="project-description" class="text-lg leading-relaxed text-gray-800">
+                <p class="mb-6">
+                    This project focused on developing a robust analytics framework to comprehensively track, analyze, and optimize the Return on Investment (ROI) for multi-channel marketing campaigns. The primary objective was to move beyond simple vanity metrics and provide actionable insights that directly contributed to business growth.
+                </p>
+                <p class="mb-6">
+                    I designed and implemented a series of interactive dashboards using **Power BI** and **Tableau**, integrating data from various sources including **Marketo, Google Analytics, CRM (Salesforce)**, and advertising platforms. These dashboards provided real-time visibility into campaign performance, allowing stakeholders to quickly identify trends, bottlenecks, and opportunities.
+                </p>
+                <p class="mb-6">
+                    A key component of this project involved setting up and analyzing **A/B tests** across different campaign elements (e.g., ad creatives, landing page layouts, email subject lines). By meticulously tracking key performance indicators (KPIs) and applying statistical significance tests, we were able to identify winning variations that significantly improved conversion rates and reduced customer acquisition costs.
+                </p>
+                <p class="mb-6">
+                    Furthermore, I leveraged **Machine Learning** techniques to build predictive models that identified high-potential customer segments for targeted campaigns. This proactive approach allowed the marketing team to allocate resources more effectively, leading to a substantial increase in qualified leads and overall campaign efficiency. The project also included a detailed report on the attribution models used to accurately credit conversions to the correct marketing touchpoints.
+                </p>
+                <p>
+                    The successful implementation of this framework resulted in a **15% increase in overall marketing campaign ROI** within the first six months and provided the marketing team with a clear, data-driven methodology for continuous optimization.
+                </p>
+            </div>
+
+            <!-- Gemini API Feature: Summarize Project -->
+            <div class="mt-8 text-center">
+                <button id="summarize-button" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105 flex items-center justify-center mx-auto">
+                    <i class="fas fa-magic mr-2"></i> ✨ Summarize Project ✨
+                </button>
+                <div id="summary-output" class="mt-6 p-4 bg-purple-50 rounded-lg text-purple-800 text-left hidden">
+                    <p class="font-semibold mb-2">Project Summary:</p>
+                    <div id="summary-text" class="text-base"></div>
+                </div>
+                <div id="loading-indicator" class="mt-4 hidden text-purple-600 font-medium">
+                    <i class="fas fa-spinner fa-spin mr-2"></i> Generating summary...
+                </div>
+            </div>
+
+            <div class="mt-10 text-center">
+                <a href="index.html#projects" class="inline-block bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                    &larr; Back to Projects
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Social Media Links Section - Reused from main page -->
+    <section id="contact" class="py-16 bg-blue-700 text-white text-center">
+        <h2 class="text-4xl font-bold mb-8">Let's Connect!</h2>
+        <div class="flex justify-center space-x-8">
+            <a href="https://www.linkedin.com/in/adityavighne" target="_blank" class="text-white hover:text-blue-200 text-5xl transition duration-300 transform hover:scale-110">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:adityavighne@gmail.com" class="text-white hover:text-blue-200 text-5xl transition duration-300 transform hover:scale-110">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <!-- Add more social links as needed -->
+            <!-- <a href="https://github.com/yourprofile" target="_blank" class="text-white hover:text-blue-200 text-5xl transition duration-300 transform hover:scale-110">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://twitter.com/yourprofile" target="_blank" class="text-white hover:text-blue-200 text-5xl transition duration-300 transform hover:scale-110">
+                <i class="fab fa-twitter"></i>
+            </a> -->
+        </div>
+        <p class="mt-8 text-lg">
+            Feel free to reach out for collaborations, opportunities, or just a chat about data!
+        </p>
+    </section>
+
+    <!-- Footer Section - Reused from main page -->
+    <footer class="bg-gray-900 text-white py-8 text-center text-sm">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 Aditya Vighne. All rights reserved.</p>
+            <p class="mt-2">Designed with <i class="fas fa-heart text-red-500"></i> using Tailwind CSS.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('summarize-button').addEventListener('click', async () => {
+            const projectDescriptionElement = document.getElementById('project-description');
+            const summaryOutputElement = document.getElementById('summary-output');
+            const summaryTextElement = document.getElementById('summary-text');
+            const loadingIndicator = document.getElementById('loading-indicator');
+
+            // Get the full text content of the project description
+            const projectText = projectDescriptionElement.innerText;
+
+            // Show loading indicator and hide previous summary
+            loadingIndicator.classList.remove('hidden');
+            summaryOutputElement.classList.add('hidden');
+            summaryTextElement.innerText = ''; // Clear previous summary
+
+            try {
+                let chatHistory = [];
+                const prompt = `Summarize the following project description concisely in 2-3 sentences, focusing on the key objective, methods, and results:\n\n${projectText}`;
+                chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+
+                const payload = { contents: chatHistory };
+                const apiKey = ""; // API key is provided by Canvas runtime
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    const text = result.candidates[0].content.parts[0].text;
+                    summaryTextElement.innerText = text;
+                    summaryOutputElement.classList.remove('hidden');
+                } else {
+                    summaryTextElement.innerText = 'Error: Could not generate summary. Please try again.';
+                    summaryOutputElement.classList.remove('hidden');
+                    console.error('Unexpected API response structure:', result);
+                }
+            } catch (error) {
+                summaryTextElement.innerText = 'Error: Failed to connect to the summarization service. Please check your network connection.';
+                summaryOutputElement.classList.remove('hidden');
+                console.error('Error calling Gemini API:', error);
+            } finally {
+                loadingIndicator.classList.add('hidden'); // Hide loading indicator
+            }
+        });
+    </script>
+</body>
+</html>
